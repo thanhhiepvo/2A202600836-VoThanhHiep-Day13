@@ -1,0 +1,30 @@
+{
+  "baseline_metrics": {
+    "traffic": 13,
+    "latency_p50": 155.0,
+    "latency_p95": 155.0,
+    "latency_p99": 155.0,
+    "avg_cost_usd": 0.0014,
+    "total_cost_usd": 0.0181,
+    "tokens_in_total": 448,
+    "tokens_out_total": 1374,
+    "error_breakdown": {},
+    "quality_avg": 0.8769
+  },
+  "normal_latency_ms": 155,
+  "slow_latency_ms": 2660,
+  "after_metrics": {
+    "traffic": 15,
+    "latency_p50": 155.0,
+    "latency_p95": 2660.0,
+    "latency_p99": 2660.0,
+    "avg_cost_usd": 0.0015,
+    "total_cost_usd": 0.0218,
+    "tokens_in_total": 510,
+    "tokens_out_total": 1603,
+    "error_breakdown": {},
+    "quality_avg": 0.8667
+  },
+  "normal_correlation_id": "req-21fa5cad",
+  "slow_correlation_id": "req-13a3a31f"
+}

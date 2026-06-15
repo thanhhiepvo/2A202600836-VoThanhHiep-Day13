@@ -1,0 +1,144 @@
+{
+  "id": "982c9ac189351f0e035fc479619af3ca",
+  "projectId": "cmqetpvto07road0cjz9pfo4x",
+  "name": "run",
+  "timestamp": "2026-06-15T06:59:41.576Z",
+  "environment": "default",
+  "tags": [
+    "claude-sonnet-4-5",
+    "lab",
+    "qa"
+  ],
+  "bookmarked": false,
+  "release": null,
+  "version": null,
+  "userId": "4d14d5d4f719",
+  "sessionId": "s09",
+  "public": false,
+  "input": {
+    "args": [],
+    "kwargs": {
+      "user_id": "u09",
+      "feature": "qa",
+      "session_id": "s09",
+      "message": "What is the policy for PII and credit card 4111 1111 1111 1111?"
+    }
+  },
+  "output": {
+    "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+    "latency_ms": 155,
+    "tokens_in": 37,
+    "tokens_out": 155,
+    "cost_usd": 0.002436,
+    "quality_score": 0.9
+  },
+  "metadata": {
+    "doc_count": 1,
+    "query_preview": "What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?",
+    "resourceAttributes": {
+      "telemetry.sdk.language": "python",
+      "telemetry.sdk.name": "opentelemetry",
+      "telemetry.sdk.version": "1.42.1",
+      "service.name": "unknown_service"
+    },
+    "scope": {
+      "name": "langfuse-sdk",
+      "version": "3.2.1",
+      "attributes": {
+        "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+      }
+    }
+  },
+  "createdAt": "2026-06-15T06:59:46.000Z",
+  "updatedAt": "2026-06-15T06:59:46.025Z",
+  "externalId": null,
+  "scores": [],
+  "latency": 0.157,
+  "observations": [
+    {
+      "id": "5c98996b79014946",
+      "traceId": "982c9ac189351f0e035fc479619af3ca",
+      "startTime": "2026-06-15T06:59:41.576Z",
+      "endTime": "2026-06-15T06:59:41.733Z",
+      "projectId": "cmqetpvto07road0cjz9pfo4x",
+      "parentObservationId": null,
+      "type": "GENERATION",
+      "environment": "default",
+      "name": "run",
+      "level": "DEFAULT",
+      "statusMessage": null,
+      "version": null,
+      "createdAt": "2026-06-15T06:59:45.930Z",
+      "updatedAt": "2026-06-15T06:59:45.931Z",
+      "input": {
+        "args": [],
+        "kwargs": {
+          "user_id": "u09",
+          "feature": "qa",
+          "session_id": "s09",
+          "message": "What is the policy for PII and credit card 4111 1111 1111 1111?"
+        }
+      },
+      "output": {
+        "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+        "latency_ms": 155,
+        "tokens_in": 37,
+        "tokens_out": 155,
+        "cost_usd": 0.002436,
+        "quality_score": 0.9
+      },
+      "metadata": {
+        "doc_count": 1,
+        "query_preview": "What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?",
+        "resourceAttributes": {
+          "telemetry.sdk.language": "python",
+          "telemetry.sdk.name": "opentelemetry",
+          "telemetry.sdk.version": "1.42.1",
+          "service.name": "unknown_service"
+        },
+        "scope": {
+          "name": "langfuse-sdk",
+          "version": "3.2.1",
+          "attributes": {
+            "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+          }
+        }
+      },
+      "model": null,
+      "modelParameters": {},
+      "completionStartTime": null,
+      "promptId": null,
+      "promptName": null,
+      "promptVersion": null,
+      "latency": 0.157,
+      "timeToFirstToken": null,
+      "usageDetails": {
+        "input": 37,
+        "output": 155,
+        "total": 192
+      },
+      "costDetails": {},
+      "usagePricingTierId": null,
+      "usagePricingTierName": null,
+      "inputPrice": 0,
+      "outputPrice": 0,
+      "totalPrice": 0,
+      "calculatedInputCost": null,
+      "calculatedOutputCost": null,
+      "calculatedTotalCost": 0,
+      "unit": "TOKENS",
+      "promptTokens": 37,
+      "completionTokens": 155,
+      "totalTokens": 192,
+      "modelId": null,
+      "usage": {
+        "unit": "TOKENS",
+        "input": 37,
+        "output": 155,
+        "total": 192
+      }
+    }
+  ],
+  "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/982c9ac189351f0e035fc479619af3ca",
+  "totalCost": 0
+}

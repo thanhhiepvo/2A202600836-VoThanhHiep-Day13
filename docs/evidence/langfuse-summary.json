@@ -1,0 +1,16 @@
+{
+  "total_traces_fetched": 92,
+  "sample_trace_ids": [
+    "982c9ac189351f0e035fc479619af3ca",
+    "e779b2f24ea3e972a839e3eba29e3ff9",
+    "3f21dda7f6124e75ec7ec75b3ff4346e",
+    "bef21472f17150bfb0eaee7e6a706417",
+    "425793e49b8f105641f41e5c1dc2bc4f",
+    "920d4a72a18ab2d3a1a50e1d91a6d761",
+    "e26ff9a2b2b5b1b2700235dd89d9816c",
+    "0f16e50c7878249b2bf0d013613d5b45",
+    "ec08f29f94ae463a6ef431d385e0002a",
+    "92b3cc00972868a98648c1e5fa47ccfe"
+  ],
+  "langfuse_url": "https://cloud.langfuse.com"
+}

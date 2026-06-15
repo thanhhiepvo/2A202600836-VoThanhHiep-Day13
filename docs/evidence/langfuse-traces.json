@@ -1,0 +1,1242 @@
+[
+  {
+    "id": "982c9ac189351f0e035fc479619af3ca",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:41.576Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "4d14d5d4f719",
+    "sessionId": "s09",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u09",
+        "feature": "qa",
+        "session_id": "s09",
+        "message": "What is the policy for PII and credit card 4111 1111 1111 1111?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 37,
+      "tokens_out": 155,
+      "cost_usd": 0.002436,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.025Z",
+    "observations": [
+      "5c98996b79014946"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.157,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/982c9ac189351f0e035fc479619af3ca",
+    "externalId": null
+  },
+  {
+    "id": "e779b2f24ea3e972a839e3eba29e3ff9",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:41.419Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "105a9cef3903",
+    "sessionId": "s10",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u10",
+        "feature": "qa",
+        "session_id": "s10",
+        "message": "How should alerts be designed?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 29,
+      "tokens_out": 167,
+      "cost_usd": 0.002592,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "How should alerts be designed?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.058Z",
+    "observations": [
+      "9133518b2b84724c"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/e779b2f24ea3e972a839e3eba29e3ff9",
+    "externalId": null
+  },
+  {
+    "id": "3f21dda7f6124e75ec7ec75b3ff4346e",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:41.261Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "2f015d970c0b",
+    "sessionId": "s08",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u08",
+        "feature": "qa",
+        "session_id": "s08",
+        "message": "How do I debug tail latency?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 28,
+      "tokens_out": 174,
+      "cost_usd": 0.002694,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "How do I debug tail latency?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.109Z",
+    "observations": [
+      "c09238202d4b4466"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/3f21dda7f6124e75ec7ec75b3ff4346e",
+    "externalId": null
+  },
+  {
+    "id": "bef21472f17150bfb0eaee7e6a706417",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:41.104Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "1632c29ecdec",
+    "sessionId": "s07",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u07",
+        "feature": "qa",
+        "session_id": "s07",
+        "message": "What should not appear in app logs?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 153,
+      "tokens_in": 30,
+      "tokens_out": 142,
+      "cost_usd": 0.00222,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What should not appear in app logs?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.084Z",
+    "observations": [
+      "41c56fc833934ea9"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.155,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/bef21472f17150bfb0eaee7e6a706417",
+    "externalId": null
+  },
+  {
+    "id": "425793e49b8f105641f41e5c1dc2bc4f",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.945Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "summary"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "4c4f62330d76",
+    "sessionId": "s06",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u06",
+        "feature": "summary",
+        "session_id": "s06",
+        "message": "Give me a short summary of the observability workflow"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 152,
+      "tokens_in": 36,
+      "tokens_out": 138,
+      "cost_usd": 0.002178,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Give me a short summary of the observability workflow",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.086Z",
+    "observations": [
+      "80fb10e121d69fac"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.154,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/425793e49b8f105641f41e5c1dc2bc4f",
+    "externalId": null
+  },
+  {
+    "id": "920d4a72a18ab2d3a1a50e1d91a6d761",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.785Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "64f6ec689229",
+    "sessionId": "s05",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u05",
+        "feature": "qa",
+        "session_id": "s05",
+        "message": "Here is my phone 0987654321, what should be logged?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 34,
+      "tokens_out": 147,
+      "cost_usd": 0.002307,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Here is my phone [REDACTED_PHONE_VN], what should be logged?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.030Z",
+    "observations": [
+      "235135a9dc6b4d16"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/920d4a72a18ab2d3a1a50e1d91a6d761",
+    "externalId": null
+  },
+  {
+    "id": "e26ff9a2b2b5b1b2700235dd89d9816c",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.626Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "summary"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "97ce842ec69d",
+    "sessionId": "s03",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u03",
+        "feature": "summary",
+        "session_id": "s03",
+        "message": "Summarize the monitoring policy for production logging"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 40,
+      "tokens_out": 119,
+      "cost_usd": 0.001905,
+      "quality_score": 0.8
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Summarize the monitoring policy for production logging",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.026Z",
+    "observations": [
+      "b55a72f4f36a3122"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/e26ff9a2b2b5b1b2700235dd89d9816c",
+    "externalId": null
+  },
+  {
+    "id": "0f16e50c7878249b2bf0d013613d5b45",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.470Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "75af07890985",
+    "sessionId": "s04",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u04",
+        "feature": "qa",
+        "session_id": "s04",
+        "message": "Can I get help with policy and monitoring?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 153,
+      "tokens_in": 36,
+      "tokens_out": 171,
+      "cost_usd": 0.002673,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Can I get help with policy and monitoring?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.070Z",
+    "observations": [
+      "f112a737a3109660"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.154,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/0f16e50c7878249b2bf0d013613d5b45",
+    "externalId": null
+  },
+  {
+    "id": "ec08f29f94ae463a6ef431d385e0002a",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.316Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "95b6504a8bd6",
+    "sessionId": "s02",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u02",
+        "feature": "qa",
+        "session_id": "s02",
+        "message": "Explain why metrics traces and logs work together"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 151,
+      "tokens_in": 33,
+      "tokens_out": 101,
+      "cost_usd": 0.001614,
+      "quality_score": 0.8
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Explain why metrics traces and logs work together",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.018Z",
+    "observations": [
+      "114f2eb65d31e6eb"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.152,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/ec08f29f94ae463a6ef431d385e0002a",
+    "externalId": null
+  },
+  {
+    "id": "92b3cc00972868a98648c1e5fa47ccfe",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:40.160Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "2055254ee30a",
+    "sessionId": "s01",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u01",
+        "feature": "qa",
+        "session_id": "s01",
+        "message": "What is your refund policy? My email is student@vinuni.edu.vn"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 152,
+      "tokens_in": 37,
+      "tokens_out": 93,
+      "cost_usd": 0.001506,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What is your refund policy? My email is [REDACTED_EMAIL]",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:46.000Z",
+    "updatedAt": "2026-06-15T06:59:46.027Z",
+    "observations": [
+      "db65f0fa1255ec75"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.154,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/92b3cc00972868a98648c1e5fa47ccfe",
+    "externalId": null
+  },
+  {
+    "id": "1ac158db53f6393f8ad70e2d5f0a8c04",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:01.496Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "105a9cef3903",
+    "sessionId": "s10",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u10",
+        "feature": "qa",
+        "session_id": "s10",
+        "message": "How should alerts be designed?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 152,
+      "tokens_in": 29,
+      "tokens_out": 165,
+      "cost_usd": 0.002562,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "How should alerts be designed?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.937Z",
+    "observations": [
+      "8818d947947f3eed"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.153,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/1ac158db53f6393f8ad70e2d5f0a8c04",
+    "externalId": null
+  },
+  {
+    "id": "9b82af909b5b1ee1342e5bee60ec05a0",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:01.337Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "4d14d5d4f719",
+    "sessionId": "s09",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u09",
+        "feature": "qa",
+        "session_id": "s09",
+        "message": "What is the policy for PII and credit card 4111 1111 1111 1111?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 152,
+      "tokens_in": 37,
+      "tokens_out": 136,
+      "cost_usd": 0.002151,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.914Z",
+    "observations": [
+      "208046cb69d5c30b"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.153,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/9b82af909b5b1ee1342e5bee60ec05a0",
+    "externalId": null
+  },
+  {
+    "id": "5724d8636fea4f650fa23ba0a7d625c7",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:01.178Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "2f015d970c0b",
+    "sessionId": "s08",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u08",
+        "feature": "qa",
+        "session_id": "s08",
+        "message": "How do I debug tail latency?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 151,
+      "tokens_in": 28,
+      "tokens_out": 137,
+      "cost_usd": 0.002139,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "How do I debug tail latency?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.916Z",
+    "observations": [
+      "3d04160e9f49608d"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.153,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/5724d8636fea4f650fa23ba0a7d625c7",
+    "externalId": null
+  },
+  {
+    "id": "faf19020251e114ae06b1a5da9bcf341",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:01.018Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "1632c29ecdec",
+    "sessionId": "s07",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u07",
+        "feature": "qa",
+        "session_id": "s07",
+        "message": "What should not appear in app logs?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 153,
+      "tokens_in": 30,
+      "tokens_out": 116,
+      "cost_usd": 0.00183,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What should not appear in app logs?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.968Z",
+    "observations": [
+      "d9d63670d078cecc"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/faf19020251e114ae06b1a5da9bcf341",
+    "externalId": null
+  },
+  {
+    "id": "74a8e52079a9e60d785ebbc4cc6ce462",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.859Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "summary"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "4c4f62330d76",
+    "sessionId": "s06",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u06",
+        "feature": "summary",
+        "session_id": "s06",
+        "message": "Give me a short summary of the observability workflow"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 36,
+      "tokens_out": 93,
+      "cost_usd": 0.001503,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Give me a short summary of the observability workflow",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:03.007Z",
+    "observations": [
+      "73a4a97bb5a32ca8"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.156,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/74a8e52079a9e60d785ebbc4cc6ce462",
+    "externalId": null
+  },
+  {
+    "id": "4bea2485e5cb235399a2e9541b44e219",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.700Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "64f6ec689229",
+    "sessionId": "s05",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u05",
+        "feature": "qa",
+        "session_id": "s05",
+        "message": "Here is my phone 0987654321, what should be logged?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 152,
+      "tokens_in": 34,
+      "tokens_out": 127,
+      "cost_usd": 0.002007,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Here is my phone [REDACTED_PHONE_VN], what should be logged?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.924Z",
+    "observations": [
+      "6b0b47f99dc57381"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.153,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/4bea2485e5cb235399a2e9541b44e219",
+    "externalId": null
+  },
+  {
+    "id": "8514b854e58d14718df8173b159b6e3a",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.542Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "75af07890985",
+    "sessionId": "s04",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u04",
+        "feature": "qa",
+        "session_id": "s04",
+        "message": "Can I get help with policy and monitoring?"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 154,
+      "tokens_in": 36,
+      "tokens_out": 97,
+      "cost_usd": 0.001563,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Can I get help with policy and monitoring?",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.915Z",
+    "observations": [
+      "c229c76ef5c07638"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.155,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/8514b854e58d14718df8173b159b6e3a",
+    "externalId": null
+  },
+  {
+    "id": "0ed5c2d768fed9e16187cfef0ccaf402",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.388Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "summary"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "97ce842ec69d",
+    "sessionId": "s03",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u03",
+        "feature": "summary",
+        "session_id": "s03",
+        "message": "Summarize the monitoring policy for production logging"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 150,
+      "tokens_in": 40,
+      "tokens_out": 95,
+      "cost_usd": 0.001545,
+      "quality_score": 0.8
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Summarize the monitoring policy for production logging",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:03.106Z",
+    "observations": [
+      "91bf53a0d1bf0aed"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.151,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/0ed5c2d768fed9e16187cfef0ccaf402",
+    "externalId": null
+  },
+  {
+    "id": "4eaccdca0ddfd7696b65e74630cbefd8",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.230Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "95b6504a8bd6",
+    "sessionId": "s02",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u02",
+        "feature": "qa",
+        "session_id": "s02",
+        "message": "Explain why metrics traces and logs work together"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 153,
+      "tokens_in": 33,
+      "tokens_out": 156,
+      "cost_usd": 0.002439,
+      "quality_score": 0.8
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "Explain why metrics traces and logs work together",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.923Z",
+    "observations": [
+      "7b288f9628c952a2"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.154,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/4eaccdca0ddfd7696b65e74630cbefd8",
+    "externalId": null
+  },
+  {
+    "id": "42c674dd113bc59045b414ad053a4f99",
+    "projectId": "cmqetpvto07road0cjz9pfo4x",
+    "name": "run",
+    "timestamp": "2026-06-15T06:59:00.071Z",
+    "environment": "default",
+    "tags": [
+      "claude-sonnet-4-5",
+      "lab",
+      "qa"
+    ],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": "2055254ee30a",
+    "sessionId": "s01",
+    "public": false,
+    "input": {
+      "args": [],
+      "kwargs": {
+        "user_id": "u01",
+        "feature": "qa",
+        "session_id": "s01",
+        "message": "What is your refund policy? My email is student@vinuni.edu.vn"
+      }
+    },
+    "output": {
+      "answer": "Starter answer. Teams should improve this output logic and add better quality checks. Use retrieved context and keep responses concise.",
+      "latency_ms": 155,
+      "tokens_in": 37,
+      "tokens_out": 121,
+      "cost_usd": 0.001926,
+      "quality_score": 0.9
+    },
+    "metadata": {
+      "doc_count": 1,
+      "query_preview": "What is your refund policy? My email is [REDACTED_EMAIL]",
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.42.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.2.1",
+        "attributes": {
+          "public_key": "pk-lf-b6c0f40e-25da-47ca-9e12-87f7c1b9e27e"
+        }
+      }
+    },
+    "createdAt": "2026-06-15T06:59:03.000Z",
+    "updatedAt": "2026-06-15T06:59:02.913Z",
+    "observations": [
+      "c966deb41282104a"
+    ],
+    "scores": [],
+    "totalCost": 0,
+    "latency": 0.155,
+    "htmlPath": "/project/cmqetpvto07road0cjz9pfo4x/traces/42c674dd113bc59045b414ad053a4f99",
+    "externalId": null
+  }
+]

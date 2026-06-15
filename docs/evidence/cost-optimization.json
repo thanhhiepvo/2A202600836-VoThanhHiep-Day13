@@ -1,0 +1,35 @@
+{
+  "live_summary_cost_usd": 0.000871,
+  "optimization": "Route summary feature to claude-haiku-4-5 instead of claude-sonnet-4-5",
+  "requests_tested": 3,
+  "before_total_usd": 0.003249,
+  "after_total_usd": 0.000867,
+  "savings_usd": 0.002382,
+  "savings_pct": 73.3,
+  "rows": [
+    {
+      "feature": "summary",
+      "tokens_in": 40,
+      "tokens_out": 53,
+      "before_usd": 0.000915,
+      "after_usd": 0.000244,
+      "model_after": "claude-haiku-4-5"
+    },
+    {
+      "feature": "summary",
+      "tokens_in": 36,
+      "tokens_out": 85,
+      "before_usd": 0.001383,
+      "after_usd": 0.000369,
+      "model_after": "claude-haiku-4-5"
+    },
+    {
+      "feature": "summary",
+      "tokens_in": 32,
+      "tokens_out": 57,
+      "before_usd": 0.000951,
+      "after_usd": 0.000254,
+      "model_after": "claude-haiku-4-5"
+    }
+  ]
+}
