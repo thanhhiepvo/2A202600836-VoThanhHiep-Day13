@@ -111,7 +111,7 @@
 ---
 
 ## 6. Bonus Items (Optional)
-- [BONUS_COST_OPTIMIZATION]: Route `summary` feature to `claude-haiku-4-5` instead of Sonnet — ~60% cost reduction on summary requests. Evidence: `docs/evidence/cost-optimization.json` and `docs/evidence/cost-optimization.png`
+- [BONUS_COST_OPTIMIZATION]: Route `summary` feature to `claude-haiku-4-5` instead of Sonnet — **73.3% cost reduction** on summary requests ($0.003249 → $0.000867). Evidence: `docs/evidence/cost-optimization.json` and `docs/evidence/cost-optimization.png`
 - [BONUS_AUDIT_LOGS]: Separate audit trail at `data/audit.jsonl` for chat_request/chat_response/incident events without raw PII. Evidence: `docs/evidence/audit-log.png`
 - [BONUS_CUSTOM_METRIC]: Automated grading evidence pipeline: `python scripts/collect_evidence.py` exports logs, traces, dashboard, incident, and cost evidence
 
