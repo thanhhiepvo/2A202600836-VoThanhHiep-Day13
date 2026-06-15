@@ -27,7 +27,10 @@ class FakeLLM:
     def generate(self, prompt: str) -> FakeResponse:
         time.sleep(0.15)
         input_tokens = max(20, len(prompt) // 4)
-        output_tokens = random.randint(80, 180)
+        if self.model.startswith("claude-haiku"):
+            output_tokens = random.randint(40, 90)
+        else:
+            output_tokens = random.randint(80, 180)
         if STATE["cost_spike"]:
             output_tokens *= 4
         answer = (

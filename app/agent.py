@@ -4,6 +4,7 @@ import time
 from dataclasses import dataclass
 
 from . import metrics
+from .audit import estimate_cost
 from .mock_llm import FakeLLM
 from .mock_rag import retrieve
 from .pii import hash_user_id, summarize_text
@@ -18,30 +19,45 @@ class AgentResult:
     tokens_out: int
     cost_usd: float
     quality_score: float
+    model: str
 
 
 class LabAgent:
-    def __init__(self, model: str = "claude-sonnet-4-5") -> None:
+    DEFAULT_MODEL = "claude-sonnet-4-5"
+    CHEAP_MODEL = "claude-haiku-4-5"
+
+    def __init__(self, model: str = DEFAULT_MODEL) -> None:
         self.model = model
-        self.llm = FakeLLM(model=model)
+        self._llms: dict[str, FakeLLM] = {}
+
+    def _llm_for(self, model: str) -> FakeLLM:
+        if model not in self._llms:
+            self._llms[model] = FakeLLM(model=model)
+        return self._llms[model]
+
+    def select_model(self, feature: str) -> str:
+        if feature == "summary":
+            return self.CHEAP_MODEL
+        return self.DEFAULT_MODEL
 
     @observe()
     def run(self, user_id: str, feature: str, session_id: str, message: str) -> AgentResult:
         started = time.perf_counter()
+        model = self.select_model(feature)
         docs = retrieve(message)
         prompt = f"Feature={feature}\nDocs={docs}\nQuestion={message}"
-        response = self.llm.generate(prompt)
+        response = self._llm_for(model).generate(prompt)
         quality_score = self._heuristic_quality(message, response.text, docs)
         latency_ms = int((time.perf_counter() - started) * 1000)
-        cost_usd = self._estimate_cost(response.usage.input_tokens, response.usage.output_tokens)
+        cost_usd = estimate_cost(model, response.usage.input_tokens, response.usage.output_tokens)
 
         langfuse_context.update_current_trace(
             user_id=hash_user_id(user_id),
             session_id=session_id,
-            tags=["lab", feature, self.model],
+            tags=["lab", feature, model],
         )
         langfuse_context.update_current_observation(
-            metadata={"doc_count": len(docs), "query_preview": summarize_text(message)},
+            metadata={"doc_count": len(docs), "query_preview": summarize_text(message), "model": model},
             usage_details={"input": response.usage.input_tokens, "output": response.usage.output_tokens},
         )
 
@@ -60,12 +76,8 @@ class LabAgent:
             tokens_out=response.usage.output_tokens,
             cost_usd=cost_usd,
             quality_score=quality_score,
+            model=model,
         )
-
-    def _estimate_cost(self, tokens_in: int, tokens_out: int) -> float:
-        input_cost = (tokens_in / 1_000_000) * 3
-        output_cost = (tokens_out / 1_000_000) * 15
-        return round(input_cost + output_cost, 6)
 
     def _heuristic_quality(self, question: str, answer: str, docs: list[str]) -> float:
         score = 0.5
