@@ -2,11 +2,18 @@ from __future__ import annotations
 
 import os
 
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from structlog.contextvars import bind_contextvars
 
 from .agent import LabAgent
+from .audit import write_audit
 from .incidents import disable, enable, status
 from .logging_config import configure_logging, get_logger
 from .metrics import record_error, snapshot
@@ -32,6 +39,17 @@ async def startup() -> None:
     )
 
 
+@app.on_event("shutdown")
+async def shutdown() -> None:
+    if tracing_enabled():
+        try:
+            from langfuse import get_client
+
+            get_client().flush()
+        except Exception:
+            pass
+
+
 @app.get("/health")
 async def health() -> dict:
     return {"ok": True, "tracing_enabled": tracing_enabled(), "incidents": status()}
@@ -42,11 +60,35 @@ async def metrics() -> dict:
     return snapshot()
 
 
+@app.get("/dashboard", response_class=HTMLResponse)
+async def dashboard() -> HTMLResponse:
+    html = Path("docs/dashboard.html").read_text(encoding="utf-8")
+    return HTMLResponse(html)
+
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: Request, body: ChatRequest) -> ChatResponse:
-    # TODO: Enrich logs with request context (user_id_hash, session_id, feature, model, env)
-    # bind_contextvars(...)
-    
+    user_hash = hash_user_id(body.user_id)
+    correlation_id = request.state.correlation_id
+    selected_model = agent.select_model(body.feature)
+
+    bind_contextvars(
+        user_id_hash=user_hash,
+        session_id=body.session_id,
+        feature=body.feature,
+        model=selected_model,
+        env=os.getenv("APP_ENV", "dev"),
+    )
+
+    write_audit(
+        "chat_request",
+        correlation_id=correlation_id,
+        user_id_hash=user_hash,
+        session_id=body.session_id,
+        feature=body.feature,
+        model=selected_model,
+    )
+
     log.info(
         "request_received",
         service="api",
@@ -59,6 +101,19 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
             session_id=body.session_id,
             message=body.message,
         )
+        write_audit(
+            "chat_response",
+            correlation_id=correlation_id,
+            user_id_hash=user_hash,
+            session_id=body.session_id,
+            feature=body.feature,
+            model=result.model,
+            latency_ms=result.latency_ms,
+            tokens_in=result.tokens_in,
+            tokens_out=result.tokens_out,
+            cost_usd=result.cost_usd,
+            quality_score=result.quality_score,
+        )
         log.info(
             "response_sent",
             service="api",
@@ -70,7 +125,7 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
         )
         return ChatResponse(
             answer=result.answer,
-            correlation_id=request.state.correlation_id,
+            correlation_id=correlation_id,
             latency_ms=result.latency_ms,
             tokens_in=result.tokens_in,
             tokens_out=result.tokens_out,
@@ -80,6 +135,14 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
     except Exception as exc:  # pragma: no cover
         error_type = type(exc).__name__
         record_error(error_type)
+        write_audit(
+            "chat_failed",
+            correlation_id=correlation_id,
+            user_id_hash=user_hash,
+            session_id=body.session_id,
+            feature=body.feature,
+            error_type=error_type,
+        )
         log.error(
             "request_failed",
             service="api",
@@ -90,9 +153,10 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
 
 
 @app.post("/incidents/{name}/enable")
-async def enable_incident(name: str) -> JSONResponse:
+async def enable_incident(name: str, request: Request) -> JSONResponse:
     try:
         enable(name)
+        write_audit("incident_enabled", correlation_id=request.state.correlation_id, incident=name)
         log.warning("incident_enabled", service="control", payload={"name": name})
         return JSONResponse({"ok": True, "incidents": status()})
     except KeyError as exc:
@@ -100,9 +164,10 @@ async def enable_incident(name: str) -> JSONResponse:
 
 
 @app.post("/incidents/{name}/disable")
-async def disable_incident(name: str) -> JSONResponse:
+async def disable_incident(name: str, request: Request) -> JSONResponse:
     try:
         disable(name)
+        write_audit("incident_disabled", correlation_id=request.state.correlation_id, incident=name)
         log.warning("incident_disabled", service="control", payload={"name": name})
         return JSONResponse({"ok": True, "incidents": status()})
     except KeyError as exc:
