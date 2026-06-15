@@ -6,11 +6,11 @@
 - [GROUP_NAME]: C04-Day13 Team
 - [REPO_URL]: https://github.com/thanhhiepvo/C04-Day13.git
 - [MEMBERS]:
-  - Member A: Thanh Hiep Vo | Role: Logging & PII
-  - Member B: Thanh Hiep Vo | Role: Tracing & Enrichment
-  - Member C: Thanh Hiep Vo | Role: SLO & Alerts
-  - Member D: Thanh Hiep Vo | Role: Load Test & Dashboard
-  - Member E: Thanh Hiep Vo | Role: Demo & Report
+  - Member A: Võ Thanh Hiệp | Role: Logging & PII
+  - Member B: Võ Thanh Hiệp | Role: Tracing & Enrichment
+  - Member C: Võ Thanh Hiệp | Role: SLO & Alerts
+  - Member D: Võ Thanh Hiệp | Role: Load Test & Dashboard
+  - Member E: Võ Thanh Hiệp | Role: Demo & Report
 
 ---
 
